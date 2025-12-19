@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" type="image/x-icon" href="/Image/profile.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>MD. ANISUJJAMAN ONTAR - Demo Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Demo Portfolio</a>
+            </div>
+
+            <div class="menu-toggle" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="nav-menu">
+                <div class="menu-toggle close-icon" id="close-icon">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="left">
+            <div class="content">
+                <h2>Hello, I'm</h2>
+                <h1>MD. ANISUJJAMAN ONTAR</h1>
+                <p class="subtitle">Full Stack Developer & Designer</p>
+                <p>I'm a backend-focused developer passionate about building scalable, efficient, and user-centered web solutions. I work with Python and frameworks like FastAPI to create clean, maintainable, and robust systems. Every challenge is an opportunity to learn and grow.</p>
+                <a href="#contact" class="btn primary-btn">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="image">
+                <img src="images/FB.jpg" alt="MD. ANISUJJAMAN ONTAR Profile">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="header">
+            <h1>About Me</h1>
+            <p>A comprehensive look into my professional journey, expertise, and educational background.</p>
+        </div>
+
+        <div class="about-content">
+            <div class="skills-section">
+                <h2>Technical Skill Set</h2>
+                <div class="skills-list">
+                    <div class="skill"><i class="fas fa-terminal"></i><h3>C</h3></div>
+                    <div class="skill"><i class="fas fa-terminal"></i><h3>C++</h3></div>
+                    <div class="skill"><i class="fab fa-python"></i><h3>Python</h3></div>
+                    <div class="skill"><i class="fab fa-html5"></i><h3>HTML</h3></div>
+                    <div class="skill"><i class="fab fa-css3-alt"></i><h3>CSS</h3></div>
+                    <div class="skill"><i class="fab fa-linux"></i><h3>Linux</h3></div>
+                    <div class="skill"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
+                    <div class="skill"><i class="fab fa-github"></i><h3>GitHub</h3></div>
+                    <div class="skill"><i class="far fa-file-word"></i><h3>MS Office</h3></div>
+                    <div class="skill"><i class="fas fa-palette"></i><h3>Photoshop</h3></div>
+                    <div class="skill"><i class="fas fa-vector-square"></i><h3>Illustrator</h3></div>
+                    <div class="skill"><i class="fas fa-drafting-compass"></i><h3>Canva</h3></div>
+                    <div class="skill"><i class="fa-brands fa-java"></i></i><h3>Java</h3></div>
+                    <div class="skill"><i class="fa-brands fa-bootstrap"></i></i><h3>Bootstrap</h3></div>
+                </div>
+            </div>
+
+            <div class="credentials">
+                <h1>Education & Training</h1>
+                <div class="education">
+                    <ul>
+                        <li>Higher Secondary School (HSC) at Bogura Ymca Public School & College (Batch 2022)</li>
+                        <li>B. Sc. in Computer Science and Engineering at Eminence College is under the National University.(2022-2026)</li>
+                        <li>Training/Certification: European It Solutions Institute: Python Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="center mt-5">
+            <h1 class="mt-5">📸 My Photo Galleries</h1>
+        </div>
+        <div class="albums mt-5">
+            <a href="https://drive.google.com/drive/folders/1PbFR2tcWRDSo_gPDscl7DZMjel01wL5f?usp=sharing" target="_blank" class="btn primary-btn" onclick="openAlbum('trips')">✈️ GDF Source File</a>
+            <a href="https://drive.google.com/drive/folders/1GIutekj0yYnxSUO7XO669srbpz6FJOWy?usp=sharing" target="_blank" class="btn primary-btn" onclick="openAlbum('friends')">👫 Friend Pic</a>
+            <a href="https://drive.google.com/drive/folders/1GIutekj0yYnxSUO7XO669srbpz6FJOWy?usp=sharing" target="_blank" class="btn primary-btn" onclick="openAlbum('party')">🎉 Party</a>
+        </div>
+        <h2 id="albumTitle" class="center" style="margin-top:20px;"></h2>
+            <div id="gallery" class="gallery"></div>
+
+    </section>
+
+    <section id="projects">
+        <div class="header">
+            <h1>My Projects</h1>
+            <p>Explore a selection of my best projects, showcasing a variety of my skills and design aesthetic.</p>
+        </div>
+
+        <div class="projects-list">
+            <div class="project">
+                <div class="project-image"><img src="images/E-commerce Store.webp" alt="E-commerce Store"></div>
+                <div class="project-info">
+                    <h2 class="project-title">E-commerce Store</h2>
+                    <p class="project-desc">A full-stack e-commerce solution with integrated payment gateway.</p>
+                    <div class="status">
+                        <a href="#" class="view-more-btn btn">View Project</a>
+                        <span class="count">300+ Views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image"><img src="images/SaaS Dashboard.png"alt="SaaS Dashboard"></div>
+                <div class="project-info">
+                    <h2 class="project-title">SaaS Dashboard</h2>
+                    <p class="project-desc">A complex data visualization dashboard for a cloud service.</p>
+                    <div class="status">
+                        <a href="#" class="view-more-btn btn">View Project</a>
+                        <span class="count">150+ Views</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="project-image"><img src="images/Construction Webpage.jpg" alt="Construction Webpage"></div>
+                <div class="project-info">
+                    <h2 class="project-title">Construction Webpage</h2>
+                    <p class="project-desc">A modern webpage design for a construction company showcasing their services.</p>
+                    <div class="status">
+                        <a href="#" class="view-more-btn btn">View Project</a>
+                        <span class="count">250+ Views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image"><img src="images/Burger Week1 page.jpg" alt="Burger Project"></div>
+                <div class="project-info">
+                    <h2 class="project-title">Burger Week page</h2>
+                    <p class="project-desc">A fun and interactive webpage design for a burger restaurant.</p>
+                    <div class="status">
+                        <a href="#" class="view-more-btn btn">View Project</a>
+                        <span class="count">350+ Views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image"><img src="images/Coffee Webpage.jpg" alt="Coffee Project"></div>
+                <div class="project-info">
+                    <h2 class="project-title">Coffee Webpage</h2>
+                    <p class="project-desc">A cozy and inviting webpage design for a coffee shop.</p>
+                    <div class="status">
+                        <a href="#" class="view-more-btn btn">View Project</a>
+                        <span class="count">350+ Views</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="project-image"><img src="images/Landing Page.jpg" alt="Landing Page"></div>
+                <div class="project-info">
+                    <h2 class="project-title">Landing Page</h2>
+                    <p class="project-desc">A responsive landing page design to capture leads and showcase services.</p>
+                    <div class="status">
+                        <a href="#" class="view-more-btn btn">View Project</a>
+                        <span class="count">200+ Views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="header">
+            <h1>My Core Services</h1>
+            <p>I offer a range of professional web design and development services tailored to your business needs.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service">
+                <h2 class="service-title">Web Design</h2>
+                <p class="project-desc">Modern, elegant, and user-centric website design focusing on brand identity and usability.</p>
+                <a href="#contact" class="btn view-more-btn">Order Service</a>
+            </div>
+
+            <div class="service">
+                <h2 class="service-title">Frontend Development</h2>
+                <p class="project-desc">Building fast, interactive user interfaces with modern frameworks like React, Vue, or Angular.</p>
+                <a href="#contact" class="btn view-more-btn">Order Service</a>
+            </div>
+
+            <div class="service">
+                <h2 class="service-title">Backend Development</h2>
+                <p class="project-desc">Creating robust, scalable, and secure server-side applications using Python and Node.js.</p>
+                <a href="#contact" class="btn view-more-btn">Order Service</a>
+            </div>
+            
+            <div class="service">
+                <h2 class="service-title">UI/UX Design</h2>
+                <p class="project-desc">Crafting intuitive and visually appealing user interfaces that enhance user experience.</p>
+                <a href="#contact" class="btn view-more-btn">Order Service</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="header">
+            <h1>Client Success Stories</h1>
+            <p>Hear from my clients who have achieved great results through our collaboration.</p>
+        </div>
+
+        <div class="client-testimonials-grid">
+            <div class="client-card">
+                <img src="images/11.avif" alt="Client 1 Photo" class="client-photo">
+                <h3>Jane Doe</h3>
+                <p class="client-designation">CEO, Tech Innovations</p>
+                <p class="client-feedback">"MD ANISUJJAMAN ONTAR delivered an outstanding backend solution that dramatically improved our application's performance. Highly professional and deeply skilled."</p>
+            </div>
+
+            <div class="client-card">
+                <img src="images/22.avif" alt="Client 2 Photo" class="client-photo">
+                <h3>Alex Smith</h3>
+                <p class="client-designation">Marketing Director, Global Ads</p>
+                <p class="client-feedback">"The web design provided was modern and exactly what we needed to rebrand. The smooth transitions show the high quality of his work."</p>
+            </div>
+
+            <div class="client-card">
+                <img src="images/33.avif" alt="Client 3 Photo" class="client-photo">
+                <h3>Sara Lee</h3>
+                <p class="client-designation">Founder, Startup Central</p>
+                <p class="client-feedback">"Exceptional frontend development. The site is highly responsive and the interactive elements are flawless. A truly professional developer."</p>
+            </div>
+
+            <div class="client-card">
+                <img src="images/44.avif" alt="Client 4 Photo" class="client-photo">
+                <h3>Fahim Rahman</h3>
+                <p class="client-designation">Founder, Coffee Lovers</p>
+                <p class="client-feedback">"The coffee shop website designed by MD ANISUJJAMAN ONTAR is simply stunning. It perfectly captures the essence of our brand and has received rave reviews from our customers."</p>
+            </div>
+
+            <div class="client-card">
+                <img src="images/55.avif" alt="Client 5 Photo" class="client-photo">
+                <h3>Samir Ahmed</h3>
+                <p class="client-designation">Founder, Burger Haven</p>
+                <p class="client-feedback">"MD ANISUJJAMAN ONTAR transformed our online presence with a stunning website. The design is not only beautiful but also highly functional, leading to increased customer engagement."</p>
+            </div>
+
+            <div class="client-card">
+                <img src="images/66.avif" alt="Client 6 Photo" class="client-photo">
+                <h3>Ahsan Khan</h3>
+                <p class="client-designation">Founder, Silver Hawk</p>
+                <p class="client-feedback">"MD ANISUJJAMAN ONTAR's work on our website was nothing short of amazing. The design is sleek and modern, and the functionality is top-notch. Highly recommended!"</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Get in Touch</h1>
+                <p class="subtitle">I'm currently available for new projects. Feel free to reach out via email, phone, or any of my social channels below.</p>
+
+                <div class="info-block">
+                    <h3>Contact Details</h3>
+                    <p class="contact-item"><i class="fas fa-user-tie"></i>Name: <span>MD. ANISUJJAMAN ONTAR</span></p>
+                    <p class="contact-item"><i class="fas fa-map-marker-alt"></i>Address: <span>Hat Sherpur-5830, Sariakandi, Bogura</span></p>
+                    <p class="contact-item"><i class="fas fa-mobile-alt"></i>Mobile: <a href="tel:+8801888387586">+8801319541875</a></p>
+                    <p class="contact-item"><i class="fas fa-envelope"></i>Email: <a href="mailto:mdwasikhan54@gmail.com">officalontar@gmail.com</a></p>
+                    <p id="time"></p>
+                </div>
+
+                <div class="info-block social-links">
+                    <h3>Social Media</h3>
+                    <div class="social-grid">
+                        <a href="https://www.linkedin.com/in/officalontar/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+                        <a href="https://www.facebook.com/officialontar" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i>Facebook</a>
+                        <a href="https://www.instagram.com/officialontar/" target="_blank" class="social-link"><i class="fab fa-instagram"></i>Instagram</a>
+                        <a href="https://twitter.com/officialontar"target="_blank" class="social-link"><i class="fab fa-x-twitter"></i>X (Twitter)</a>
+                        <a href="https://github.com/officialontar" target="_blank" class="social-link"><i class="fab fa-github"></i>GitHub</a>
+                        <a href="https://api.whatsapp.com/send/?phone=8801319541875&text&type=phone_number&app_absent=0" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h2>Send Me a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="file">File Upload</label>
+                        <input type="file" id="attachment" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message"></textarea>
+                    </div>
+                        <button class="btn primary-btn form-submit-btn" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 MD ANISUJJAMAN ONTAR. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    <script>
+        function updateTime () {
+            const td = new Date ();
+            document.getElementById ("time") .innerHTML = td;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+
+
+    <script>
+      const form = document.getElementById("contactForm");
+
+      form.addEventListener("submit", function (event) {
+        const name_variable = document.getElementById("name").value.trim();
+        const email_variable = document.getElementById("email").value.trim();
+        const message_variable = document.getElementById("message").value.trim();
+        const attachment_variable = document.getElementById("attachment").value.trim();
+
+        if (name_variable === "" || email_variable === "" || message_variable === "" || attachment_variable === "" ||) {
+          alert("Please fill in all fields.");
+          event.preventDefault(); // stop submit
+        } else {
+          alert("✅ Thank you! Your inquiry has been submitted successfully. We’ll contact you soon!");
+        }
+      });
+    </script>
+
+
+    <script src="mani.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
